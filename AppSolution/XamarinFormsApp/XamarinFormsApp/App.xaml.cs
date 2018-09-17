@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinFormsApp.Views;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace XamarinFormsApp
@@ -11,7 +12,7 @@ namespace XamarinFormsApp
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+			MainPage = new NavigationPage(new ListOfLoveTeams());
 		}
 
 		protected override void OnStart ()

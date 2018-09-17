@@ -10,7 +10,7 @@ using WebAPI.Data;
 namespace WebAPI.Migrations
 {
     [DbContext(typeof(MyAppDbContext))]
-    [Migration("20180917122853_InitialMigration")]
+    [Migration("20180917181219_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,25 +21,21 @@ namespace WebAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.Student", b =>
+            modelBuilder.Entity("WebAPI.Models.LoveTeam", b =>
                 {
-                    b.Property<int>("StudentId")
+                    b.Property<int>("LoveTeamId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Age");
+                    b.Property<DateTime>("AnniversaryDate");
 
-                    b.Property<DateTime>("DateCreated");
+                    b.Property<string>("NameOfBoy");
 
-                    b.Property<string>("Department");
+                    b.Property<string>("NameOfGirl");
 
-                    b.Property<string>("Firstname");
+                    b.HasKey("LoveTeamId");
 
-                    b.Property<string>("Lastname");
-
-                    b.HasKey("StudentId");
-
-                    b.ToTable("Students");
+                    b.ToTable("LoveTeams");
                 });
 #pragma warning restore 612, 618
         }

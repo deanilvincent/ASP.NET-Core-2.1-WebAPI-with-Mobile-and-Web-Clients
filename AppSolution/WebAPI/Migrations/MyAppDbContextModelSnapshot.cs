@@ -19,25 +19,21 @@ namespace WebAPI.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("WebAPI.Models.Student", b =>
+            modelBuilder.Entity("WebAPI.Models.LoveTeam", b =>
                 {
-                    b.Property<int>("StudentId")
+                    b.Property<int>("LoveTeamId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("Age");
+                    b.Property<DateTime>("AnniversaryDate");
 
-                    b.Property<DateTime>("DateCreated");
+                    b.Property<string>("NameOfBoy");
 
-                    b.Property<string>("Department");
+                    b.Property<string>("NameOfGirl");
 
-                    b.Property<string>("Firstname");
+                    b.HasKey("LoveTeamId");
 
-                    b.Property<string>("Lastname");
-
-                    b.HasKey("StudentId");
-
-                    b.ToTable("Students");
+                    b.ToTable("LoveTeams");
                 });
 #pragma warning restore 612, 618
         }
