@@ -9,27 +9,25 @@ namespace WebAPI.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Students",
+                name: "LoveTeams",
                 columns: table => new
                 {
-                    StudentId = table.Column<int>(nullable: false)
+                    LoveTeamId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Firstname = table.Column<string>(nullable: true),
-                    Lastname = table.Column<string>(nullable: true),
-                    Department = table.Column<string>(nullable: true),
-                    Age = table.Column<int>(nullable: false),
-                    DateCreated = table.Column<DateTime>(nullable: false)
+                    NameOfBoy = table.Column<string>(nullable: true),
+                    NameOfGirl = table.Column<string>(nullable: true),
+                    AnniversaryDate = table.Column<DateTime>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Students", x => x.StudentId);
+                    table.PrimaryKey("PK_LoveTeams", x => x.LoveTeamId);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Students");
+                name: "LoveTeams");
         }
     }
 }

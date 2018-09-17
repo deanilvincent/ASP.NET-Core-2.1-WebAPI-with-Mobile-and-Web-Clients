@@ -10,11 +10,11 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class StudentsController : ControllerBase
+    public class LoveTeamsController : ControllerBase
     {
         private readonly MyAppDbContext context;
 
-        public StudentsController(MyAppDbContext context)
+        public LoveTeamsController(MyAppDbContext context)
         {
             this.context = context;
         }
@@ -22,7 +22,7 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await context.Students.ToListAsync());
+            return Ok(await context.LoveTeams.ToListAsync());
         }
 
         [HttpGet("{id}")]
@@ -35,18 +35,18 @@ namespace WebAPI.Controllers
 
             return Ok(new
             {
-                result = await context.Students.Where(x => x.StudentId == id).FirstOrDefaultAsync()
+                result = await context.LoveTeams.Where(x => x.LoveTeamId == id).FirstOrDefaultAsync()
             });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Student student)
+        public async Task<IActionResult> Create(LoveTeam student)
         {
             if (student == null) return BadRequest();
 
             try
             {
-                context.Students.Add(student);
+                context.LoveTeams.Add(student);
                 await context.SaveChangesAsync();
 
                 return Ok(new
@@ -61,7 +61,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Edit(int id, Student student)
+        public async Task<IActionResult> Edit(int id, LoveTeam student)
         {
             if (id == 0)
             {
@@ -72,8 +72,8 @@ namespace WebAPI.Controllers
 
             try
             {
-                student.StudentId = id;
-                context.Students.Update(student);
+                student.LoveTeamId = id;
+                context.LoveTeams.Update(student);
                 await context.SaveChangesAsync();
 
                 return Ok(new
@@ -94,8 +94,8 @@ namespace WebAPI.Controllers
 
             try
             {
-                var student = await context.Students.Where(x => x.StudentId == id).FirstOrDefaultAsync();
-                context.Students.Remove(student);
+                var student = await context.LoveTeams.Where(x => x.LoveTeamId == id).FirstOrDefaultAsync();
+                context.LoveTeams.Remove(student);
                 await context.SaveChangesAsync();
 
                 return Ok(new

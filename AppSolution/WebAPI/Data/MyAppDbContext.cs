@@ -15,6 +15,6 @@ namespace WebAPI.Data
             optionsBuilder.UseSqlServer(@"Server=.;Database=Db01;Integrated Security=True");
         }
 
-        public DbSet<Student> Students { get; set; }
+        public DbSet<LoveTeam> LoveTeams { get; set; }
     }
 }
