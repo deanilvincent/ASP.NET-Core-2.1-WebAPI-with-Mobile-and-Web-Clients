@@ -1,6 +1,5 @@
 <template>
     <div>
-        <br />
         <h3 class="title is-3">Create Love Team</h3>
         <hr />
         <div class="columns">
@@ -53,4 +52,3 @@ export default {
     }
 }
 </script>
-
