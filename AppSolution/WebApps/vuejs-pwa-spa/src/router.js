@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import ListOfLoveTeam from '../src/components/LoveTeam/ListOfLoveTeam.vue'
+import CreateLoveTeam from '../src/components/LoveTeam/CreateLoveTeam.vue'
+import EditLoveTeam from '../src/components/LoveTeam/EditLoveTeam.vue'
 
 Vue.use(Router)
 
@@ -10,16 +12,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'listOfLoveTeam',
+      component: ListOfLoveTeam
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/loveteams',
+      name: 'listOfLoveTeam',
+      component: ListOfLoveTeam
+    },
+    {
+      path: '/loveteams/create',
+      name: 'CreateLoveTeam',
+      component: CreateLoveTeam
+    },
+    {
+      path: '/loveteams/edit/:id',
+      name: 'EditLoveTeam',
+      component: EditLoveTeam
     }
   ]
 })
