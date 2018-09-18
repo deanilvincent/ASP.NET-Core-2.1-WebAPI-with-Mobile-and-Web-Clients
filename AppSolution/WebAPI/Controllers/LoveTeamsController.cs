@@ -22,7 +22,10 @@ namespace WebAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok(await context.LoveTeams.ToListAsync());
+            return Ok(new
+            {
+                result = await context.LoveTeams.ToListAsync()
+            });
         }
 
         [HttpGet("{id}")]
