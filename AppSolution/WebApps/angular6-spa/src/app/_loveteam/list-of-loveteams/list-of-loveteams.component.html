@@ -1,0 +1,17 @@
+<button class="button is-success" (click)="refresh()">Refresh</button>
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+  <thead>
+    <th>Love Team ID</th>
+    <th>Name Of Boy</th>
+    <th>Name Of Girl</th>
+    <th>Anniversary Date</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let loveTeam of loveTeams">
+      <td>{{loveTeam.loveTeamId}}</td>
+      <td>{{loveTeam.nameOfBoy}}</td>
+      <td>{{loveTeam.nameOfGirl}}</td>
+      <td>{{loveTeam.anniversaryDate}}</td>
+    </tr>
+  </tbody>
+</table>
