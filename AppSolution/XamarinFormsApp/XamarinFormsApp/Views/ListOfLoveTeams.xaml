@@ -21,11 +21,12 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal" Padding="10">
             <Button Text="Refresh"
                     Command="{Binding Refresh}"
                     TextColor="White"
-                    BackgroundColor="#3BAFDA"/>
+                    BackgroundColor="#3BAFDA"
+                    HorizontalOptions="CenterAndExpand"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>
