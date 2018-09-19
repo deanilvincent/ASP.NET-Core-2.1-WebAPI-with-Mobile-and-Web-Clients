@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsApp.iOS", "Xama
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsApp.UWP", "XamarinFormsApp\XamarinFormsApp.UWP\XamarinFormsApp.UWP.csproj", "{4E5FC206-0571-4C24-93EA-74BB33072311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsApp", "XamarinFormsApp\XamarinFormsApp\XamarinFormsApp.csproj", "{806E12DA-094C-440E-A37D-3507A960079B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinFormsApp", "XamarinFormsApp\XamarinFormsApp\XamarinFormsApp.csproj", "{806E12DA-094C-440E-A37D-3507A960079B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

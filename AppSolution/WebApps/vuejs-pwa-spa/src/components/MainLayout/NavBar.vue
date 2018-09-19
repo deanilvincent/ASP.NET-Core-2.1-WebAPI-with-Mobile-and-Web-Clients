@@ -2,9 +2,9 @@
     <div>
         <nav class="navbar is-light">
             <div class="navbar-brand">
-            <a class="navbar-item">
+            <router-link to="/loveteams/" class="navbar-item">
                 LoveTeamApp
-            </a>
+            </router-link>
             </div>
         
             <div class="navbar-menu">
