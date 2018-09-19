@@ -5,13 +5,13 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{C32C094C-E29F-4C31-88E7-71909F31A05C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsApp.Android", "XamarinFormsApp\XamarinFormsApp.Android\XamarinFormsApp.Android.csproj", "{C7CD04CB-C04E-4776-A4B7-EA7733D669D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XfApp.Android", "XamarinFormsApp\XamarinFormsApp.Android\XfApp.Android.csproj", "{C7CD04CB-C04E-4776-A4B7-EA7733D669D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsApp.iOS", "XamarinFormsApp\XamarinFormsApp.iOS\XamarinFormsApp.iOS.csproj", "{277DE0FD-210C-4997-9CCF-E73E73FDB009}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsApp.UWP", "XamarinFormsApp\XamarinFormsApp.UWP\XamarinFormsApp.UWP.csproj", "{4E5FC206-0571-4C24-93EA-74BB33072311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinFormsApp", "XamarinFormsApp\XamarinFormsApp\XamarinFormsApp.csproj", "{806E12DA-094C-440E-A37D-3507A960079B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinFormsApp", "XamarinFormsApp\XamarinFormsApp\XamarinFormsApp.csproj", "{806E12DA-094C-440E-A37D-3507A960079B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
