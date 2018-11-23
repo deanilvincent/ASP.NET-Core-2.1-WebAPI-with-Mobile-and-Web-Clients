@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  ApiUrl: 'https://stinovalicheswebapidemo.azurewebsites.net/api/'
+  ApiUrl: 'https://dagupanwebapp01.azurewebsites.net/api/'
 };
 
 /*

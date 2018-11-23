@@ -12,7 +12,7 @@ namespace WebAPI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=tcp:novademo3.database.windows.net,1433;Initial Catalog=novademodb;Persist Security Info=False;User ID=mdvincent;Password=L@ptop123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            optionsBuilder.UseSqlServer(@"Server=tcp:dserver001.database.windows.net,1433;Initial Catalog=ddb;Persist Security Info=False;User ID=dbsa;Password=Pr0xxxy123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
 
         public DbSet<LoveTeam> LoveTeams { get; set; }

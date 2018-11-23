@@ -9,7 +9,7 @@ namespace XamarinFormsApp.RestClient
 {
     public class LoveTeamService
     {
-        public const string ApiUrl = "https://stinovalicheswebapidemo.azurewebsites.net/api/";
+        public const string ApiUrl = "https://dagupanwebapp01.azurewebsites.net/api/";
 
         public async Task<List<LoveTeam>> Get()
         {
