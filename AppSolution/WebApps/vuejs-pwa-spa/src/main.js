@@ -6,7 +6,7 @@ import './registerServiceWorker'
 import axios from 'axios'
 
 Vue.config.productionTip = false
-axios.defaults.baseURL = "https://stinovalicheswebapidemo.azurewebsites.net/api/"
+axios.defaults.baseURL = "https://dagupanwebapp01.azurewebsites.net/api/"
 
 new Vue({
   router,

@@ -2,15 +2,13 @@
 <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
   <thead>
     <th>Love Team ID</th>
-    <th>Name Of Boy</th>
-    <th>Name Of Girl</th>
+    <th>Love Team</th>
     <th>Anniversary Date</th>
   </thead>
   <tbody>
     <tr *ngFor="let loveTeam of loveTeams">
       <td>{{loveTeam.loveTeamId}}</td>
-      <td>{{loveTeam.nameOfBoy}}</td>
-      <td>{{loveTeam.nameOfGirl}}</td>
+      <td><strong>{{loveTeam.nameOfBoy}}</strong> loves <strong>{{loveTeam.nameOfGirl}}</strong></td>
       <td>{{loveTeam.anniversaryDate}}</td>
     </tr>
   </tbody>

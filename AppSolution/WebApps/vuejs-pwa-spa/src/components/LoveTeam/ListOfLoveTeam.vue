@@ -8,16 +8,14 @@
         <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
         <thead>
             <th>Love Team ID</th>
-            <th>Name Of Boy</th>
-            <th>Name Of Girl</th>
+            <th>Love Team</th>
             <th>Anniversary Date</th>
             <th></th>
         </thead>
         <tbody>
             <tr v-for="loveTeam in loveTeams">
                 <td>{{loveTeam.loveTeamId}}</td>
-                <td>{{loveTeam.nameOfBoy}}</td>
-                <td>{{loveTeam.nameOfGirl}}</td>
+                <td><strong>{{loveTeam.nameOfBoy}}</strong> loves <strong>{{loveTeam.nameOfGirl}}</strong></td>
                 <td>{{loveTeam.anniversaryDate}}</td>
                 <td>
                     <button class="button is-link" @click="navToEdit(loveTeam.loveTeamId)">Edit</button>
